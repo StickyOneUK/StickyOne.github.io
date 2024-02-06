@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+bodyb {
+  background-image: url('https://cdn.discordapp.com/attachments/1203724044650807428/1204182180532715590/New_Project_9.png?ex=65d3cd0c&is=65c1580c&hm=ca0ef4aa36ae4509435ea8e90edfbe5986caaf2ace289829446d591e517c1dce&');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  font-size: 75px;
+  font-family: 'Bungee', sans-serif;
+  text-align: center;
+}
+
+#changeText {
+  cursor: text;
+  outline: none;
+}
+
+#instructionText {
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Style for rectangle box */
+#rectangleBox {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 2px solid black;
+}
+
+/* Style for font selection dropdown */
+#fontSelectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.fontSelectionText {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: black;
+  margin-bottom: 5px;
+}
+
+#fontSelect {
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  width: 100px;
+}
+
+/* Style for color options */
+.colorOptionContainer {
+  display: flex;
+}
+
+.colorOption {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  border: 2px solid black;
+}
+
+/* Style for download button */
+#downloadButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style for download button on hover */
+#downloadButton:hover {
+  background-color: #45a049;
+}

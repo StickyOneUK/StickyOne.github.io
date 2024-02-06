@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>StickyOne - Decal Store</title>
+    <title>StickyOne - Premium Vehicle Vinyl Decals for Social Roads! Unleash Your Unique Expression with Our Exclusive Designs</title>
     
     <meta name="keywords" content="High Quality Vinyl Decals & Printing">
     <meta name="description" content="Discover artisanal craftsmanship at its finest with our exquisite collection of handmade vinyl decals and bespoke apparel printing. Elevate your style with our meticulously crafted designs, where every piece tells a unique story. From intricately detailed decals starting at just £3.99 to custom-designed clothing starting at £14.99, we offer quality and affordability in every stitch and stroke. Established in 2024 as a passion project, our dedication to delivering premium products has been our driving force since day one. Explore our range and add a touch of personalized elegance to your world today.">
@@ -73,16 +73,112 @@
                 </div><!-- End .header-bottom -->
         </header><!-- End .header -->
 
-        	<div class="error-content text-center" style="background-image: url(assets/images/backgrounds/error-bg.jpg)">
-            	<div class="glitch-wrapper">
-            		<h1 class="glitch-text">Error 404</h1><!-- End .error-title -->
-            		<p>We are sorry, the page you've requested is not available.</p>
-            		<a href="https://stickyone.co.uk" class="btn btn-outline-primary-2 btn-minwidth-lg">
-            			<span>Go Home</span>
-            			<i class="icon-long-arrow-right"></i>
-            		</a>
-            	</div><!-- End .container -->
-        	</div><!-- End .error-content text-center -->
+        	<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transparent Background</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+  .background {
+    background-image: url('https://cdn.discordapp.com/attachments/1203724044650807428/1204182180532715590/New_Project_9.png?ex=65d3cd0c&is=65c1580c&hm=ca0ef4aa36ae4509435ea8e90edfbe5986caaf2ace289829446d591e517c1dce&');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    font-size: 75px;
+    font-family: 'Bungee', sans-serif;
+    text-align: center;
+  }
+
+  .text-input {
+    cursor: text;
+    outline: none;
+  }
+
+  .instruction-text {
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .rectangle-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid black;
+  }
+
+  .color-option-container {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 2px solid black;
+  }
+
+  .download-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .download-button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+  <div class="instruction-text">Enter text to preview vinyl lettering:</div>
+  <div class="text-input" contenteditable="true">Your Name</div>
+  <div class="rectangle-box">
+    <div class="color-option-container">
+      <div class="color-option" style="background-color: white;"></div>
+      <div class="color-option" style="background-color: black;"></div>
+    </div>
+  </div>
+  <button class="download-button">Download PNG</button>
+
+  <script>
+    document.querySelectorAll('.color-option').forEach(function(colorOption) {
+      colorOption.addEventListener('click', function() {
+        var color = this.style.backgroundColor;
+        document.querySelector('.text-input').style.color = color;
+        document.querySelectorAll('.color-option').forEach(function(option) {
+          option.style.border = '2px solid black';
+        });
+        this.style.border = '5px solid #add8e6';
+      });
+    });
+  </script>
+</body>
+</html>
+
         </main><!-- End .main -->
         <style>
         /* SALESPOP */
