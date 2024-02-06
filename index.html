@@ -53,9 +53,9 @@
                 <div class="intro-slider owl-carousel owl-theme owl-nav-inside owl-light mb-0" data-toggle="owl" data-owl-options='{"dots": true, "nav": false, "responsive": {"1200": {"nav": true, "dots": false}}}'>
                     <div class="intro-slide" style="background-image: url(assets/images/demos/demo-8/slider/slide-1.jpg);">
                         <div class="container intro-content text-left">
-                            <h3 class="intro-subtitle">Vinyl Decals & Printing</h3>
+                            <h3 class="intro-subtitle" style="margin-left: -3px;">We're Back!</h3>
                             <h1 class="intro-title">StickyOne<br><strong class="decals-text">Decals</strong></h1>
-                            <h3 class="intro-subtitle">High Quality Vinyl Decals</h3>
+                            <h3 class="intro-subtitle desktop-subtitle">High Quality Vinyl</h3>
                         </div><!-- End .intro-content -->
                         <img class="position-right" src="assets/images/demos/demo-8/slider/img-1.png">
                     </div><!-- End .intro-slide -->
@@ -64,13 +64,29 @@
         </main><!-- End .main -->
         
         <style>
+        /* CSS for desktop */
+        @media (min-width: 768px) {
+            .desktop-subtitle {
+                text-align: center; /* Align to the left on desktop */
+                margin-left: -320px; /* Adjust margin for desktop */
+            }
+        }
+        
         /* CSS for mobile devices */
         @media (max-width: 767px) {
             .decals-text {
                 font-size: 16px; /* Adjust the font size for mobile devices */
             }
+        
+            .desktop-subtitle {
+                text-align: center; /* Center the subtitle on mobile */
+                display: block; /* Ensure it's visible on mobile */
+                margin: 0 auto; /* Center horizontally on mobile */
+            }
         }
         </style>
+        
+        
         
 <style>
 /* SALESPOP */
@@ -223,7 +239,115 @@ time_stamps = ["hours", "days"], setInterval(function() {
 
 
         <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?98491436&data_platform=code&data_date=2024-02-04" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-98491436");</script>
-
+        
+        <div class="custom-styles">
+            <svg width="0" height="0">
+                <filter id="custom-filter" x="-50%" y="-200%" width="200%" height="500%">
+                    <!-- create blurred copy -->
+                    <feGaussianBlur stdDeviation="35"/>
+                    <!-- bump up saturation of blurred copy -->
+                    <feColorMatrix type="saturate" values="1.3"/>
+                    <!-- slap original on top of blurred & saturated copy -->
+                    <feComposite in="SourceGraphic"/>
+                </filter>
+            </svg>
+        
+            <h2>We're Updating</h2>
+            <h3>StickyOne</h3>            
+                <style>
+                    /* Custom styles for the button */
+                    #playButton {
+                        font-size: 12px; /* Adjust the font size as needed */
+                        padding: 1px 2px; /* Adjust the padding as needed */
+                        background-color: red; /* Start with red */
+                        color: #fff; /* Change the text color */
+                        border: none;
+                        border-radius: 5px; /* Adjust the border radius as needed */
+                        cursor: pointer;
+                        animation: flash 1s infinite alternate; /* Apply the flashing animation */
+                    }
+            
+                    /* Define the flashing animation */
+                    @keyframes flash {
+                        from {
+                            background-color: red; /* Start with red */
+                        }
+                        to {
+                            background-color: blue; /* End with blue */
+                        }
+                    }
+                </style>
+            
+                <!-- Your button -->
+                <button id="playButton">Click Me</button>
+            
+                <!-- Include the sound file -->
+                <audio id="audio" src="girl.mp3"></audio>
+            
+                <script>
+                    // Get the button element
+                    const playButton = document.getElementById('playButton');
+            
+                    // Add click event listener
+                    playButton.addEventListener('click', function() {
+                        // Get the audio element
+                        const audio = document.getElementById('audio');
+                        // Play the sound
+                        audio.play();
+            
+                        // After 5 seconds, redirect to a link
+                        setTimeout(function() {
+                            window.location.href = 'https://www.youtube.com/watch?v=2r-G1fUGGh4'; // Change the URL to your desired destination
+                        }, 10000); // 10000 milliseconds = 10 seconds
+                    });
+                </script>            
+            <style>
+                .custom-styles {
+                    display: grid;
+                    height: 100%;
+                    background: #00000000;
+                }
+        
+                svg[height="0"] { 
+                    position: absolute; 
+                }
+        
+                h2 {
+                    --my-custom-prop: 0;
+                    place-self: center;
+                    background: 
+                        linear-gradient(90deg, 
+                                hsl(calc(var(--my-custom-prop)*1turn), 95%, 65%), 
+                                hsl(calc(var(--my-custom-prop)*1turn + 90deg), 95%, 65%));
+                    -webkit-background-clip: text;
+                                    background-clip: text;
+                    color: transparent;
+                    font: 950 clamp(.875em, 7.25vw, 5em) arial black, sans-serif;
+                    filter: url(#custom-filter);
+                    text-align: center;
+                    text-transform: uppercase;
+                    /* needs support for animating custom properties */
+                    /* Firefox not quite there yet, but it's coming */
+                    animation: custom-animation 4s linear infinite;
+                }
+        
+                h3 {
+                    place-self: center;
+                    color: transparent;
+                    font: 300 0.5em arial, sans-serif;
+                    text-align: center;
+                }
+        
+                @keyframes custom-animation {
+                    0% { --my-custom-prop: 0; }
+                    50% { --my-custom-prop: 0.5; }
+                    100% { --my-custom-prop: 1; }
+                }
+            </style>
+        </div>
+        
+        
+        
         <footer class="footer footer-2">
             <div class="footer-middle">
                 <div class="container">
